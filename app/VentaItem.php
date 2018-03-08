@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FacturaItem extends Model
+class VentaItem extends Model
 {
-    public function factura()
+    public function venta()
     {
-        return $this->belongsTo(Factura::class);
+        return $this->belongsTo(Venta::class);
     }
 
     public function producto()

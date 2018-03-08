@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Factura extends Model
+class Venta extends Model
 {
     public function cliente()
     {
@@ -13,6 +13,6 @@ class Factura extends Model
 
     public function items()
     {
-        return $this->hasMany(FacturaItem::class);
+        return $this->hasMany(VentaItem::class);
     }
 }

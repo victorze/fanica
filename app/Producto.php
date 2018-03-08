@@ -8,6 +8,6 @@ class Producto extends Model
 {
     public function items()
     {
-        return $this->hasMany(FacturaItem::class);
+        return $this->hasMany(VentaItem::class);
     }
 }

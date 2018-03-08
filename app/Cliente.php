@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
-    public function facturas()
+    public function ventas()
     {
-        return $this->hasMany(Factura::class);
+        return $this->hasMany(Venta::class);
     }
 }
