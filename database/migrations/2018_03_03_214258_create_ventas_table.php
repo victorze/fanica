@@ -15,7 +15,8 @@ class CreateVentasTable extends Migration
     {
         Schema::create('ventas', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('fecha');
+            $table->date('fecha_emision');
+            $table->date('fecha_vcto');
             $table->char('tipo', 2);
             $table->char('serie', 4);
             $table->string('correlativo', 8);

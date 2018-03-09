@@ -20,6 +20,7 @@ class CreateVentaItemsTable extends Migration
             $table->double('cantidad', 12, 3);
             $table->decimal('descuento', 12, 2);
             $table->char('afectacion_igv', 2);
+             $table->double('valor_unitario', 12, 3);
 
             $table->foreign('venta_id')->references('id')->on('ventas')->onDelete('cascade');
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');

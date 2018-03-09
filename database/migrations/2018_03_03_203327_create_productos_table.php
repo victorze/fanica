@@ -17,7 +17,7 @@ class CreateProductosTable extends Migration
             $table->increments('id');
             $table->string('codigo', 30)->unique();
             $table->string('descripcion', 250);
-            $table->decimal('valor_venta', 12, 2);
+            $table->decimal('valor_referencial', 12, 2);
             $table->string('unidad_medida', 3);
             $table->timestamps();
         });
