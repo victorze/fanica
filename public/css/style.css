@@ -1,0 +1,9 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+}
+body > .container {
+  padding-top: 1.5rem;
+}
